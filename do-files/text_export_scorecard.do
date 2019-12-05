@@ -1088,8 +1088,11 @@ format %9.0fc unregpop_share
 format %9.0fc unregpop_share_mr
 format %9.0fc unregpop_share_mi
 
-
-
+replace hdportfolio_share = hdportfolio_share *100
+replace eduportfolio_share = eduportfolio_share *100
+replace hnpportfolio_share = hnpportfolio_share *100
+replace spjportfolio_share = spjportfolio_share *100
+    
 save "input/textforscorecard.dta", replace
 
 
