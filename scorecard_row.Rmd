@@ -9,7 +9,8 @@ output:
    keep_tex: yes
 fontsize: 9.2pt
 geometry: "left=1.3cm,right=1.3cm,top=2cm,bottom=2cm"
-header-includes:  \usepackage{fancyhdr}
+header-includes:  
+  \usepackage{fancyhdr}
   \usepackage{graphicx}
   \usepackage{eurosym}
   \usepackage{booktabs,xcolor} \pagestyle{fancy}
