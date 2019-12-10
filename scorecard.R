@@ -61,8 +61,8 @@ hci <- cbind(hci, tv)
 #----------------------------------------------------------
 
 # select version of document
-ver <- "afr"
 ver <- "wld"
+ver <- "afr"
 if (ver == "afr") {
   hci <-  hci %>% filter(wbregion == "Sub-Saharan Africa")
 }
@@ -97,7 +97,7 @@ if (pages == 1) {
     pull(country)
 }
 
-countries <- c("EGY")
+countries <- c("AGO")
 if (length(countries) > 0) {
   hci <-  hci %>% filter(wbcode  %in% countries)
 }
@@ -121,31 +121,3 @@ err
 
 # Delete and copy files
 dc_files(ver)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
